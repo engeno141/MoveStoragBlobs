@@ -19,7 +19,7 @@ namespace MoveStoragBlobs
         // https://markheath.net/post/azure-blob-copy-quick
 
 
-            var connectionString = "";
+            var connectionString = "YOUR CONNECTION STRING HERE";
             var blobServiceClient = new Azure.Storage.Blobs.BlobContainerClient(connectionString, "source");
             var storageAccount = CloudStorageAccount.Parse(connectionString);
             var blobClient = storageAccount.CreateCloudBlobClient();                     
