@@ -38,3 +38,4 @@ C:\Users\olimartin\source\repos\MoveStoragBlobs\MoveStoragBlobs\obj\Debug\netcor
 C:\Users\olimartin\source\repos\MoveStoragBlobs\MoveStoragBlobs\obj\Debug\netcoreapp3.1\MoveStoragBlobs.dll
 C:\Users\olimartin\source\repos\MoveStoragBlobs\MoveStoragBlobs\obj\Debug\netcoreapp3.1\MoveStoragBlobs.pdb
 C:\Users\olimartin\source\repos\MoveStoragBlobs\MoveStoragBlobs\obj\Debug\netcoreapp3.1\MoveStoragBlobs.genruntimeconfig.cache
+C:\Users\olimartin\source\repos\MoveStoragBlobs\MoveStoragBlobs\obj\Debug\netcoreapp3.1\MoveStoragBlobs.csproj.AssemblyReference.cache

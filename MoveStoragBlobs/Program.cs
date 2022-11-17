@@ -13,19 +13,20 @@ namespace MoveStoragBlobs
         static void Main(string[] args)
         {
 
-        // Execute this program from a Machine that has access to azure blob storage through private endpoint
-        // This code is not intended for PRODUCTION, its just an exemple of moving blobs using flat listening
-        // https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-list?tabs=dotnet#flat-listing-versus-hierarchical-listing
-        // https://markheath.net/post/azure-blob-copy-quick
+            // Execute this program from a Machine that has access to azure blob storage through private endpoint
+            // This code is not intended for PRODUCTION, its just an exemple of moving blobs using flat listening
+            // https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-list?tabs=dotnet#flat-listing-versus-hierarchical-listing
+            // https://markheath.net/post/azure-blob-copy-quick
 
+            var source = "source";
 
-            var connectionString = "YOUR CONNECTION STRING HERE";
-            var blobServiceClient = new Azure.Storage.Blobs.BlobContainerClient(connectionString, "source");
+            var connectionString = "";
+            var blobServiceClient = new Azure.Storage.Blobs.BlobContainerClient(connectionString, source);
             var storageAccount = CloudStorageAccount.Parse(connectionString);
             var blobClient = storageAccount.CreateCloudBlobClient();                     
 
-            var sourceContainer = blobClient.GetContainerReference("source");
-            var destContainer = blobClient.GetContainerReference("dest");
+            var sourceContainer = blobClient.GetContainerReference(source);
+            var destContainer = blobClient.GetContainerReference("destination");
 
             var sourcePaths = ListBlobsFlatListing(blobServiceClient).GetAwaiter().GetResult();
 
